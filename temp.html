@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>temp</title>
+	<meta name="generator" content="BBEdit 11.6" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Bootwatch for theme-->
+  <link rel="stylesheet" href="bootstrap_min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div id="container">
+	<div id="main">
+    <!-- Bar buttons-->
+    <header class="bg-secondary">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark nav-padding">
+                    <a id="greenButton" class="navbar-brand btn-secondary rounded nav-button" href="index.html" >Latitude</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="clouds.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comparisons.html">Comparison</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="DATA.html">Data</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <!-- Main for the page's contents-->
+    <main class="main bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Summary -->
+                <div class="col-xs-12 col-sm-12 col-md-7">
+                    <div class="box bg-white">
+                        <h2 id="greenText">Temperature</h2>
+                        <hr  id= "greenLine" />
+                        <img class="float-left" height="100%" width="100%" src="plots/temp.png" alt="plots/temp">
+                        <p class="format">The graph shows the maximum temperature of the cities randomly selected at 
+                        the time this data was gathered. According to the graph, the cities that are locate at 40 to 80˚ 
+                        latitude have the lowest temperatures.  The cities that are located between 20˚ to -40˚ have the 
+                        highest temperatures, up to 100˚F. 
+                        </p>
+                    </div>
+                </div>
+                <!-- Visualizations -->
+                <div class="col-xs-12 col-sm-12 col-md-5">
+                    <div class="box bg-white">
+                        <h2 id="greenText">Visualizations</h2>
+                        <hr id="greenLine" />
+                        <div container>
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <div>
+                                        <a  id="a" href="humidity.html">
+                                            <img height=100% width=100% src="plots/humidity.png" alt="plot/humidity">
+                                        </a>
+                                        <div id="div1"> Humidity </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <div class="box-selected">
+                                        <a id="a" href="temp.html">
+                                            <img height=100% width=100% src="plots/temp.png" alt="plots/temp" >
+                                        </a>
+                                        <div id="div1"> Temperature </div>   
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <div>
+                                        <a id="a" href="clouds.html">
+                                            <img height=100% width=100% src="plots/clouds.png" alt="plots/clouds">
+                                        </a>
+                                        <div id="div1"> Claudiness </div>   
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-sm-3 col-md-6">
+                                    <div>
+                                        <a id="a" href="wind.html">
+                                           <img height=100% width=100% src="plots/wind.png" alt="plots/wind">
+                                        </a>
+                                        <div id="div1"> Wind Speed </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+</div>
+    
+    
+	<footer id="footer">
+			<hr id="FootergreenLine"/>
+	        <div id="whiteLetters" >© Copyright Coding Bootcamp 2019
+	        </div>
+	</footer>
+	
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
