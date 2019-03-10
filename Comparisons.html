@@ -10,104 +10,123 @@
 
 </head>
 <body>
-<div id="container">
-	<div id="main">
-	
-    <!-- Header with  Navigation Bar-->
-    <header class="bg-secondary">
-        <div class="container">
-<!--             <nav class="navbar navbar-expand-lg navbar-dark nav-padding"> -->
+<!-- Header with  Navigation Bar-->
+		<header class="bg-secondary">
+			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-dark">
-                <a  href="index.html" role="button" id= "greenButton" class="btn btn-primary btn-lg">Latitude</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Plots
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="temp.html">Max Temperature</a>
-                                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                                <a class="dropdown-item" href="clouds.html">Cloudiness</a>
-                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Comparisons.html">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="DATA.html">Data</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
-        <main class="main bg-light">
-        <div class="container">
-            <div class="row">
-                <!-- Comparaison Visualizations -->
-                <div class="box bg-white">
-                    <h2>Comparison: Latitude vs X</h2>
-                    <hr id="greenLine">
-                    <p> Click any plot to get an in-depth analysis.</p>
-                    <div container>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>vs. Max Temperature</h4>
-                                    <a  href="temp.html">
-                                        <img height=100% width=100% src="plots/temp.png" alt="temp">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>vs. Humidity</h4>
-                                    <a  href="humidity.html">
-                                        <img height=100% width=100% src="plots/humidity.png" alt="humidity">
-                                    </a>   
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>vs. Cloudiness</h4>
-                                    <a  href="clouds.html">
-                                        <img height=100% width=100% src="plots/clouds.png" alt="clouds">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div>
-                                    <h4>vs. Wind Speed</h4>
-                                    <div>
-                                    <a  href="wind.html">
-                                        <img height=100% width=100% src="plots/wind.png" alt="wind">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-<footer id="footer" class="page-footer font-small blue">
-  <!-- Copyright -->
-  <hr id="FootergreenLine"/>
-  <div id="whiteLetters" >© Copyright Coding Bootcamp 2019
-  </div>
-  <!-- Copyright -->
-
-</footer>
-	
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+					<a href="index.html" role="button" id="greenButton" class="btn btn-primary btn-lg">Latitude</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+					<div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Plots </a> 
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="temp.html">Max Temperature</a> <a class="dropdown-item" href="humidity.html">Humidity</a> <a class="dropdown-item" href="clouds.html">Cloudiness</a> <a class="dropdown-item" href="wind.html">Wind Speed</a> 
+							</div>
+							</li>
+							<li class="nav-item"> <a class="nav-link" href="Comparisons.html">Comparison</a> </li>
+							<li class="nav-item"> <a class="nav-link" href="DATA.html">Data</a> </li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+	<main class="main bg-light"> 
+		<div class="container">
+			<div class="row">
+<!-- Comparaison Visualizations -->
+				<div class="box bg-white">
+					<h2>
+						Comparison: Latitude vs X
+					</h2>
+					<hr id="greenLine">
+					<p>
+						Click any plot to get an in-depth analysis.
+					</p>
+					<div container>
+						<div class="row">
+							<div class="col-md-6">
+								<div>
+									<h4>
+										vs. Max Temperature
+									</h4>
+									<a href="temp.html"> <img height="100%" width="100%" src="plots/temp.png" alt="temp"> </a> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4>
+										vs. Humidity
+									</h4>
+									<a href="humidity.html"> <img height="100%" width="100%" src="plots/humidity.png" alt="humidity"> </a> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4>
+										vs. Cloudiness
+									</h4>
+									<a href="clouds.html"> <img height="100%" width="100%" src="plots/clouds.png" alt="clouds"> </a> 
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h4>
+										vs. Wind Speed
+									</h4>
+									<div>
+										<a href="wind.html"> <img height="100%" width="100%" src="plots/wind.png" alt="wind"> </a> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main> 
+			<footer id="footer" class="page-footer font-small blue">
+<!-- Copyright -->
+				<hr id="FootergreenLine" />
+				<div id="whiteLetters">
+					© Copyright Coding Bootcamp 2019 
+				</div>
+<!-- Copyright -->
+			</footer>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+			</script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+			</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
